@@ -1,0 +1,9 @@
+ABBA
+true
+
+LEVEL
+true
+
+SEOUL
+false
+
