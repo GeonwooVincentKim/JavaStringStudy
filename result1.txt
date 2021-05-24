@@ -1,9 +1,15 @@
-ABBA
+abba
+true
+
+Level
+true
+
+LeVel
 true
 
 LEVEL
 true
 
-SEOUL
+Seoul
 false
 

@@ -32,16 +32,19 @@ public class CircuitSentences {
         int readLine = Integer.parseInt(getFile.nextLine());
 
         String getData = "";
+        String toLowerString = "";
         String[] getDataArray = null;
         String result = "";
         boolean isIterate = false;
 
         for (int i = 1; i <= readLine; i++) {
             getData = getFile.nextLine();
-            getDataArray = getData.split("");
+            toLowerString = getData.toLowerCase();
+            getDataArray = toLowerString.split("");
 
             for (int j = 0; j < getDataArray.length / 2; j++) {
-                if (getDataArray[j].equals(getDataArray[getDataArray.length - j - 1])) {
+                if (getDataArray[j].equals(getDataArray[getDataArray.length - j - 1])
+                ) {
                     isIterate = true;
                 } else {
                     isIterate = false;

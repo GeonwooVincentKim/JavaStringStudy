@@ -1,14 +1,17 @@
+import java.util.Scanner;
+
 public class ReverseString {
-    public static void main(String[] args) {
-        String readLine = "YOU ARE A GOOD MAN";
-        char[] convertToArray = readLine.toCharArray();
-        char[] reverseArray = new char[convertToArray.length];
+    public static void Reverse(Scanner getArray) {
+        String readLine = getArray.nextLine();
 
-        for (int i = 0; i < convertToArray.length; i++) {
-            reverseArray[convertToArray.length - 1 - i] = convertToArray[i];
+        for (int i = readLine.length() - 1; i >= 0; i--) {
+            System.out.print(readLine.charAt(i));
         }
+    }
 
-        String getReversedArr = new String(reverseArray);
-        System.out.println(getReversedArr);
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        Reverse(userInput);
+        userInput.close();
     }
 }

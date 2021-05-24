@@ -1,4 +1,6 @@
-3
-ABBA
+5
+abba
+Level
+LeVel
 LEVEL
-SEOUL
+Seoul
